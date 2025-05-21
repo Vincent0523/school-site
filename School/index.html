@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridgeview Senior High School</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="/api/placeholder/80/80" alt="School Logo" class="logo">
+                <h1>Ridgeview Senior High School</h1>
+            </div>
+            <nav>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="campus-life.html">Campus Life</a></li>
+                    <li><a href="news.html">News & Events</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="portal.html" class="portal-btn">Student Portal</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Excellence in Education</h2>
+            <p>Preparing students for success through academic excellence, character development, and community engagement</p>
+            <div class="hero-buttons">
+                <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+                <a href="virtual-tour.html" class="btn btn-secondary">Virtual Tour</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="announcements">
+        <div class="container">
+            <h2>Announcements</h2>
+            <div class="announcement-slider" id="announcementSlider">
+                <!-- Announcements will be loaded dynamically from MongoDB -->
+                <div class="announcement-loading">Loading latest announcements...</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-links">
+        <div class="container">
+            <h2>Quick Links</h2>
+            <div class="links-grid">
+                <a href="calendar.html" class="quick-link">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>School Calendar</span>
+                </a>
+                <a href="curriculum.html" class="quick-link">
+                    <i class="fas fa-book"></i>
+                    <span>Curriculum</span>
+                </a>
+                <a href="faculty.html" class="quick-link">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>Faculty & Staff</span>
+                </a>
+                <a href="athletics.html" class="quick-link">
+                    <i class="fas fa-basketball-ball"></i>
+                    <span>Athletics</span>
+                </a>
+                <a href="clubs.html" class="quick-link">
+                    <i class="fas fa-users"></i>
+                    <span>Clubs & Activities</span>
+                </a>
+                <a href="resources.html" class="quick-link">
+                    <i class="fas fa-laptop"></i>
+                    <span>Student Resources</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-programs">
+        <div class="container">
+            <h2>Featured Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <img src="/api/placeholder/300/200" alt="STEM Program">
+                    <div class="program-content">
+                        <h3>STEM Excellence</h3>
+                        <p>Advanced courses in Science, Technology, Engineering, and Mathematics.</p>
+                        <a href="programs/stem.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <img src="/api/placeholder/300/200" alt="Arts Program">
+                    <div class="program-content">
+                        <h3>Creative Arts</h3>
+                        <p>Express yourself through visual arts, music, theater, and digital media.</p>
+                        <a href="programs/arts.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <img src="/api/placeholder/300/200" alt="Business Program">
+                    <div class="program-content">
+                        <h3>Business Leadership</h3>
+                        <p>Entrepreneurial skills, financial literacy, and business fundamentals.</p>
+                        <a href="programs/business.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="upcoming-events">
+        <div class="container">
+            <h2>Upcoming Events</h2>
+            <div class="events-container" id="upcomingEvents">
+                <!-- Events will be loaded dynamically from MongoDB -->
+                <div class="events-loading">Loading upcoming events...</div>
+            </div>
+            <div class="view-all-container">
+                <a href="events.html" class="btn btn-secondary">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-highlights">
+        <div class="container">
+            <h2>School News</h2>
+            <div class="news-grid" id="newsGrid">
+                <!-- News will be loaded dynamically from MongoDB -->
+                <div class="news-loading">Loading latest news...</div>
+            </div>
+            <div class="view-all-container">
+                <a href="news.html" class="btn btn-secondary">View All News</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Community Says</h2>
+            <div class="testimonial-slider" id="testimonialSlider">
+                <!-- Testimonials will be loaded dynamically from MongoDB -->
+                <div class="testimonial-loading">Loading testimonials...</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <h2>School Gallery</h2>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery images will be loaded dynamically from MongoDB -->
+                <div class="gallery-loading">Loading gallery...</div>
+            </div>
+            <div class="view-all-container">
+                <a href="gallery.html" class="btn btn-secondary">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-details">
+                    <h2>Contact Us</h2>
+                    <p><i class="fas fa-map-marker-alt"></i> 1234 Education Drive, Ridgeview, RV 12345</p>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@ridgeviewhigh.edu</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="newsletter">
+                    <h3>Subscribe to Our Newsletter</h3>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="/api/placeholder/60/60" alt="School Logo" class="footer-logo">
+                    <h3>Ridgeview Senior High School</h3>
+                    <p>Providing quality education since 1985. Our mission is to prepare students for future success through academic excellence and character development.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="campus-life.html">Campus Life</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-resources">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="portal.html">Student Portal</a></li>
+                        <li><a href="parents.html">Parent Resources</a></li>
+                        <li><a href="careers.html">Career Opportunities</a></li>
+                        <li><a href="alumni.html">Alumni</a></li>
+                        <li><a href="donate.html">Support Our School</a></li>
+                    </ul>
+                </div>
+                <div class="footer-policies">
+                    <h3>Policies</h3>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="accessibility.html">Accessibility</a></li>
+                        <li><a href="conduct.html">Code of Conduct</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ridgeview Senior High School. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+    <script src="js/data-service.js"></script>
+</body>
+</html>
